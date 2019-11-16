@@ -1,0 +1,68 @@
+<!--
+->This is the very first page user will interact with(login page).
+->The unique id entered by user will be validated in enter.php.
+-->
+<!DOCTYPE html>              
+<html>                           
+<head>                        
+<style>                
+    body {
+        height: 100%;      
+        background-position: center;
+        background-repeat:repeat;
+        background-size: cover;
+        background-color: antiquewhite;
+}       
+    .front{
+        text-align: center;
+        box-sizing: border-box;           
+    }    
+    button{
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 30%;    
+    }     
+    h1{
+        text-align: center;    
+        padding: 50px;
+        box-sizing: border-box;
+        border-radius: 30px;
+        color: brown;
+    }        
+    footer{
+        color: red;
+        text-align: center;
+    }      
+    input{
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }     
+    .new{
+        text-align: center;
+    }        
+</style>                    
+</head>                        
+<body >                      
+    <h1>Sample bank</h1>
+    <form method="post" action="enter.php">
+        <div class="front">
+            <h2>Your Unique id :</h2><input type="number" name="id" placeholder="Your ID" value="0"><br><br>   
+            <div class="front">
+                <button type="submit">Login</button>
+            </div>
+        </div>
+   </form>
+    <br>
+    <a href="create.php"><div class="new">create new id</div></a>
+
+    
+</body>
+</html>
